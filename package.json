@@ -4,16 +4,12 @@
   "description": "Test Puppeteer",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "cucumber-js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "",
   "devDependencies": {
-    "faker": "^4.1.0",
-    "jest": "^23.4.1",
-    "jest-cli": "^23.4.1"
-  },
-  "dependencies": {
-    "pixelmatch": "^4.0.2"
+    "cucumber": "^4.0.0",
+    "puppeteer": "^1.1.0"
   }
 }
