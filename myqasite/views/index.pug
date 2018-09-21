@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  ul(class='mdc-image-list my-image-list')
+    each item in images_list
+      li(class='mdc-image-list__item')
+        div(class='mdc-image-list__image-aspect-container')
+          img(class='mdc-image-list__image', src=item.image)
+        div(class='mdc-image-list__supporting')
+          span(class='mdc-image-list__label') #{item.label}
