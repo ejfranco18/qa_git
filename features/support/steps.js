@@ -14,5 +14,16 @@ Given("The listeners for JS and image are set", async function() {
 });
 
 When("The user goes to the GPay site", async function(){
+	console.log("=================");
 	return await this.goToPage()
+	console.log(img_err);
 });
+
+// Given(/^The user goes to the (\d+) site$/, async function(url){
+// 	return await this.print(url)
+// })
+
+Given("The user goes to the {string} GPay site", async function(url){
+	return await this.goToLocalePage(url)
+})
+
